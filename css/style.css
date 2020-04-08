@@ -121,8 +121,7 @@ body {
 
 .menu ul li:hover a {
     font-weight: bold;
-    text-decoration: line-through;
-    text-decoration-color: black;
+    background:linear-gradient(white 60%, #ffd868 40%, #ffd868);
 }
 
 
