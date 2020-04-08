@@ -4,9 +4,20 @@ html, body {
     width: 100%;
 }
 
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('coolvetica\ rg.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light.ttf');
+}
+
+
 body {
     width: 100%;
-    background: url(BG6.jpg);
+    background: url(BG-black.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,92 +25,25 @@ body {
     font-family: Montserrat;
 }
 
-.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
+.my_head{
     width: 100%;
-    height: 10%;
-    background-color: #4d4646;
-    border-bottom: 3px solid rgba(255, 255, 255, 1);
+    height: 76vh;
+    color: white;
+    position: relative;
 }
 
-.logo {
-    letter-spacing: 1px;
-    float: left;
-    color: #fff;
-    font-size: 22px;
-    line-height: 80px;
-    padding: 0 6em
-}
-
-.menu {
-    float: right;
-    line-height: 50px;
-    margin: 0 6em
-}
-
-.menu ul {
-    list-style: none;
-}
-
-.menu ul li{
-    display: inline-block;
-}
-
-.menu ul li:hover a {
-    color: #4d4646;
-    font-weight: bold;
-    border: 1px solid #DBE1E9;
-    border-radius: 4px;
-    padding: 7px 14px;
-    background-color: #DBE1E9;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: lighter;
-    padding:  0 20px;
-}
-
-.box {
-    width: 40%;
-    padding: 40px;
-    height: 70vh;
-    background: rgba(255, 255, 255, 0.4);
-    margin: auto;
-    margin-top: 10%;
-    color: grey;
-    text-align: center;
-}
-
-.box-img {
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-}
-
-.box h1{
-    color: #363636;
-    font-size: 46px;
-    font-weight: 400;
-    margin-bottom: -30px;
-}
-
-.box h2{
-    margin-top: 30px;
-    color: #363636;
-    font-size: 24px;
-    font-weight: lighter;
-}
-
+/* Topo do head */
 .flex {
+    position: absolute;
     display: flex;
+
+}
+
+.social{
+    top: 2%;
     justify-content: center;
+    right: 0;
+    width: 20%;   
 }
 
 .image_contact {
@@ -111,3 +55,74 @@ body {
     width: 30px;
     height: 30px;
 }
+
+/* Fim do head */
+.info{
+    width: 80%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+.title{
+    font-family: 'Roboto';
+    font-size: 20px;
+
+}
+
+.name{
+    font-family: 'Coolvetica';
+    font-size: 80px;
+
+}
+
+.container{
+    margin: 0 auto
+}
+
+/* Rodapé */
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height: 24vh;
+    color: black;
+    background-color: white;
+    font-family: "Roboto";
+}
+
+.menu {
+    width: 100vw;
+    position:absolute;
+    bottom: 30%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu ul li:hover a {
+    font-weight: bold;
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+
